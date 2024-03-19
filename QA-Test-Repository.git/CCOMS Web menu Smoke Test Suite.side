@@ -1,0 +1,866 @@
+{
+  "id": "f92204b3-5e1f-4bf7-a181-7bb56e269356",
+  "version": "2.0",
+  "name": "CCOMS Web menu Smoke Test",
+  "url": "https://comsint.test.doc.state.mn.us/COMSSearch",
+  "tests": [{
+    "id": "2d32d900-7341-4b4a-8f40-4e0f1d1cc455",
+    "name": "01 Offender - Search",
+    "commands": [{
+      "id": "f5c624ce-bcf6-44a6-9e42-623c5701e09f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d956b91-063f-444e-a550-03a3c5627f5f",
+      "comment": "",
+      "command": "open",
+      "target": "/COMSUserPreferences/Home/ManagePreferences",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71c69b63-9287-40d1-867b-54af9f15cc1d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0001e0d9-780e-4bb7-8da3-4e9b7cbbbe9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c448a5d0-c5a8-420d-8f06-0813923ce3fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Search')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSSearch')]", "xpath:href"],
+        ["xpath=//li/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win386",
+      "windowTimeout": 2000
+    }, {
+      "id": "ee62ac3d-4b11-4c76-b013-021a7b22c3ac",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win386}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e1bca6b-d162-43ac-af35-e140de8b762a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h2[contains(.,'Search')]",
+      "targets": [
+        ["id=page-name", "id"],
+        ["css=#page-name", "css:finder"],
+        ["xpath=//h2[@id='page-name']", "xpath:attributes"],
+        ["xpath=//div[@id='coms-wrapper']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4312b1a5-0b16-4a16-a330-2b5746ac0485",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "57e2d98e-1eed-470a-9a4a-add9c783fb1e",
+    "name": "02 Offender - ADA Access Plan",
+    "commands": [{
+      "id": "8a9a0183-4beb-428e-aa8b-10aad0d9ce58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0140bc26-276e-431a-b96d-91ea98df2d84",
+      "comment": "",
+      "command": "open",
+      "target": "/COMSUserPreferences/Home/ManagePreferences",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d04b4ea-83d7-49e9-913d-667dfb1f98bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddf62040-a902-4e94-805b-f5487efa78ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64cd4f8d-c81b-41f0-ba8b-c11503156522",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ADA Access Plan",
+      "targets": [
+        ["linkText=ADA Access Plan", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'ADA Access Plan')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/ADA?OID=268116')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'ADA Access Plan')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6662",
+      "windowTimeout": 2000
+    }, {
+      "id": "4d303f4c-fe63-401f-b591-db6862f12d95",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6662}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d30c11a5-9b07-4925-9d44-55082bc80964",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'ADA Access Plan Need Review')]",
+      "targets": [
+        ["id=ctl05_lblADAReviewNeed", "id"],
+        ["css=#ctl05_lblADAReviewNeed", "css:finder"],
+        ["xpath=//span[@id='ctl05_lblADAReviewNeed']", "xpath:attributes"],
+        ["xpath=//legend[@id='ctl05_lblLegendTitle']/span", "xpath:idRelative"],
+        ["xpath=//legend/span", "xpath:position"],
+        ["xpath=//span[contains(.,'ADA Access Plan Need Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0f9ec1-611a-4c3a-956d-ce3525c063a6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "eccd6022-bbf1-4a30-8d01-199257b9a8b2",
+    "name": "03 Offender- Assessment - MnSafeD",
+    "commands": [{
+      "id": "3442569d-a5d1-4288-afff-e4b356fdb891",
+      "comment": "",
+      "command": "open",
+      "target": "https://comsint.test.doc.state.mn.us/COMSSearch",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2381e2c-377a-4257-afde-3a6ba772ffd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a38f3949-1b8f-4dac-95c7-74fb7d54d4c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e05d70af-9e4f-4bf9-9da4-9708821d7841",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e54c752a-2a3a-4af4-bf3c-73e7a93b4ca9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropright > .show > .dropdown:nth-child(3) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(3) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Assessments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bdc3e58-5238-494c-9846-8d11a91ef91c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MnSafeD",
+      "targets": [
+        ["linkText=MnSafeD", "linkText"],
+        ["css=.dropdown:nth-child(3) > .show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'MnSafeD')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSMnSafeD?OID=268116')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MnSafeD')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9757",
+      "windowTimeout": 2000
+    }, {
+      "id": "0f874abf-0525-4a87-9137-26d75c3447cb",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a66093e0-8a06-4436-a029-e30cd3af7c62",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9757}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae87f0df-9b57-4378-957a-07f378c5318d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h2[contains(.,'MnSafeD Assessments')]",
+      "targets": [
+        ["id=page-name", "id"],
+        ["css=#page-name", "css:finder"],
+        ["xpath=//h2[@id='page-name']", "xpath:attributes"],
+        ["xpath=//div[@id='coms-wrapper']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'MnSafeD Assessments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adc18e33-a74e-4ebe-91c3-d92204d80398",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa2d6f51-48ff-4287-b5f2-474b30f141da",
+    "name": "04 Offender - Assessments - MnSARR",
+    "commands": [{
+      "id": "7cf8a43e-d3e9-4160-80d4-fa17671c9066",
+      "comment": "",
+      "command": "open",
+      "target": "https://comsint.test.doc.state.mn.us/COMSSearch",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7112d56-4300-4c01-a02d-03f69f0685f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54c99300-8978-40b9-8644-28ee30efe36a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41e70f3c-aa48-4896-b7fa-ce7b56e0b841",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec3d2ebe-6531-4985-b41b-3aa7f08a78d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropright > .show > .dropdown:nth-child(3) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(3) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Assessments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba48d647-8f52-4b0d-a004-b4c012f05914",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "linkText=MnSTARR",
+      "targets": [
+        ["linkText=MnSTARR", "linkText"],
+        ["css=.dropdown:nth-child(3) > .show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'MnSTARR')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSMnSTARR?OID=268116')]", "xpath:href"],
+        ["xpath=//div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'MnSTARR')]", "xpath:innerText"]
+      ],
+      "value": "45.703125,13.5"
+    }, {
+      "id": "bdd91b9c-fece-499e-bd25-5cf35b90cf5e",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "linkText=MnSTARR",
+      "targets": [
+        ["linkText=MnSTARR", "linkText"],
+        ["css=.dropdown:nth-child(3) > .show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'MnSTARR')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSMnSTARR?OID=268116')]", "xpath:href"],
+        ["xpath=//div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'MnSTARR')]", "xpath:innerText"]
+      ],
+      "value": "45.703125,13.5"
+    }, {
+      "id": "2568624a-3c2c-47d7-82f0-38ab50ece853",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "linkText=MnSTARR",
+      "targets": [
+        ["linkText=MnSTARR", "linkText"],
+        ["css=.dropdown:nth-child(3) > .show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'MnSTARR')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSMnSTARR?OID=268116')]", "xpath:href"],
+        ["xpath=//div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'MnSTARR')]", "xpath:innerText"]
+      ],
+      "value": "45.703125,13.5"
+    }, {
+      "id": "a279c231-3508-431b-9a1e-a1783e8b2c5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MnSTARR",
+      "targets": [
+        ["linkText=MnSTARR", "linkText"],
+        ["css=.dropdown:nth-child(3) > .show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'MnSTARR')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSMnSTARR?OID=268116')]", "xpath:href"],
+        ["xpath=//div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'MnSTARR')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9479",
+      "windowTimeout": 2000
+    }, {
+      "id": "c3b41849-b83f-4246-b136-e84e6175f7d3",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67392943-621f-4186-8312-4dcd2fdee35c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9479}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70d43ee0-c722-441a-9c1e-079c0cb33f95",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h2[contains(.,'MnSTARR Assessments')]",
+      "targets": [
+        ["id=page-name", "id"],
+        ["css=#page-name", "css:finder"],
+        ["xpath=//h2[@id='page-name']", "xpath:attributes"],
+        ["xpath=//div[@id='coms-wrapper']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'MnSTARR Assessments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2218ef3d-57bb-4272-b763-5b378fe0f793",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cd348bc-b2b4-488a-96c9-cea273df87cd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdbea449-79fd-46f1-8432-08fddaadc7ed",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b8e430bf-68e6-481e-af4a-1f73df40c2a6",
+    "name": "05 Offender - Case Management - Case Management",
+    "commands": [{
+      "id": "5d78018a-d62e-4d7c-8459-47933ba64aa9",
+      "comment": "",
+      "command": "open",
+      "target": "https://comsint.test.doc.state.mn.us/COMSSearch",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ceca609-ad4f-4166-9b14-332dd788c0b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79b61aa3-2923-448a-b5ab-c66e8e92f3ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1a41da9-05e9-4d03-80c7-93941eb01efd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a269d736-5af0-4abc-a34f-fb4bc5a6137a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb5aa02d-541e-4b41-b4ff-e62ae0227566",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Case Management",
+      "targets": [
+        ["linkText=Case Management", "linkText"],
+        ["css=.dropdown:nth-child(4) > .show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Case Management')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/COMSCaseManagement?OID=268116')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1175",
+      "windowTimeout": 2000
+    }, {
+      "id": "bef477a4-bc5c-4012-b00d-389ea3021058",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78236e10-94dc-4f66-b77e-5bf302a5e5a7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1175}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "971f2575-e112-4d51-af23-845510ef677b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h2[contains(.,'PRT Review')]",
+      "targets": [
+        ["id=page-name", "id"],
+        ["css=#page-name", "css:finder"],
+        ["xpath=//h2[@id='page-name']", "xpath:attributes"],
+        ["xpath=//div[@id='coms-wrapper']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'PRT Review')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "937b0ed5-811e-4eb9-a530-493a33321a4c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7078ea3b-4f0b-4b5d-b368-ac9a90222f59",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71568a85-b01d-4db5-94a1-9841e76f371f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a73fbe74-35b2-4a84-8d80-997d5a9db542",
+    "name": "06 Offender - Case Management - Case Worker/Directives",
+    "commands": [{
+      "id": "ab92ca5a-2119-496b-927d-3aa62d35d06a",
+      "comment": "",
+      "command": "open",
+      "target": "https://comsint.test.doc.state.mn.us/COMSSearch",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f77863c5-69eb-4eb9-90e3-f0582b15f6e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9c36544-7dc1-4834-9849-5099326d3bc7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "386da6a2-bd2f-4bb2-b39d-8ec78f668c4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a99dc5c7-fef3-4644-a23b-c2f63e142e34",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": "61.953125,7.5"
+    }, {
+      "id": "232a7285-fdad-4092-af74-9e364cbef8dd",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": "61.953125,7.5"
+    }, {
+      "id": "96feb0bc-23f1-4322-a9ff-48c71eebd59f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": "61.953125,7.5"
+    }, {
+      "id": "474c8177-c526-415b-8e5d-3b4c4c0de1ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ad67300-fbb9-4c30-8479-6b0b139acff5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Caseworker/Directives",
+      "targets": [
+        ["linkText=Caseworker/Directives", "linkText"],
+        ["css=.dropdown:nth-child(4) > .show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Caseworker/Directives')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/CaseManager/default.aspx?OID=268116')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Caseworker/Directives')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1466",
+      "windowTimeout": 2000
+    }, {
+      "id": "c5930467-a4b4-404b-bfe6-2a0fb327d23e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cda436a3-90b0-41e9-8164-de1ea27927b1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1466}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4175c9fd-5d37-4675-959f-dda8d1c64310",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//b[contains(.,'Sentence Departure')]",
+      "targets": [
+        ["css=#ctl00_ContentPlaceHolder1_Label1 b", "css:finder"],
+        ["xpath=//span[@id='ctl00_ContentPlaceHolder1_Label1']/u/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Sentence Departure')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ff0d3f6-7aed-4fd2-9648-db57b2068c71",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f780bf96-b4b9-415e-8970-518fa31d25e0",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4e939fe3-ebac-43a6-b857-10e8449a3c91",
+    "name": "07 Offender - Case Management - Document Exchange Manager",
+    "commands": [{
+      "id": "59442de3-6bf6-4bf2-ad6c-cd3faad89eba",
+      "comment": "",
+      "command": "open",
+      "target": "https://comsint.test.doc.state.mn.us/COMSSearch",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db0c6a19-62da-47a1-80e7-4035c4398096",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1027x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03047830-ddb8-49b6-a587-6259dafc4067",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=COMS",
+      "targets": [
+        ["linkText=COMS", "linkText"],
+        ["css=.nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'COMS')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'COMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8368ff45-ad02-431c-8de6-d6389861c916",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(1) > .dropdown-item",
+      "targets": [
+        ["css=.dropdown:nth-child(1) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Offender')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9dcde2b-8823-4667-8c00-54628eafb9bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item",
+      "targets": [
+        ["css=.dropright > .show > .dropdown:nth-child(4) > .dropdown-item", "css:finder"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Case Management')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46013c5a-bada-49f2-ba60-93e02702420c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Document Exchange Manager",
+      "targets": [
+        ["linkText=Document Exchange Manager", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Document Exchange Manager')]", "xpath:link"],
+        ["xpath=//div[@id='site-navigation']/ul/li/div/div/div/div[2]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comsint.test.doc.state.mn.us/DEM')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Document Exchange Manager')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4705",
+      "windowTimeout": 2000
+    }, {
+      "id": "f28ff5b4-48f5-4a53-a67a-20f28edbabdd",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2798f230-eb63-4602-bd68-2eba0d2fa133",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4705}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3de9ebd-7db2-4933-b823-7b8728c4ed16",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(text(),'New')]",
+      "targets": [
+        ["id=ctl00_NavMenut2", "id"],
+        ["linkText=New", "linkText"],
+        ["css=#ctl00_NavMenut2", "css:finder"],
+        ["xpath=//a[contains(text(),'New')]", "xpath:link"],
+        ["xpath=//a[@id='ctl00_NavMenut2']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_NavMenun1Nodes']/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/DEM/DataEntry/ExchangeDocumentAuthored_New_SelectDocumentType.aspx')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34b8e875-a599-4a2d-8f26-cc27096eedfb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38eb1e98-3d9d-4b95-a38c-0068efc00217",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7b520538-dd6f-40d6-bcc8-a3447fa29af2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2d32d900-7341-4b4a-8f40-4e0f1d1cc455"]
+  }],
+  "urls": ["https://comsint.test.doc.state.mn.us/", "https://comsint.test.doc.state.mn.us/COMSSearch"],
+  "plugins": []
+}
